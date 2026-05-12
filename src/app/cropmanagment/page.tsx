@@ -10,12 +10,12 @@ export default function Cropmanagment() {
     const [filter, setFilter] = useState("All");
     return (
         <>
-        <CropTopbar />
-        <div className="p-4">
-            <Cards />
-            <Filter filter={filter} setFilter={setFilter} />
-            <Crops filter={filter} />
-        </div>
+            <CropTopbar />
+            <div className="p-4">
+                <Cards />
+                <Filter filter={filter} setFilter={setFilter} />
+                <Crops filter={filter} />
+            </div>
         </>
     )
 }

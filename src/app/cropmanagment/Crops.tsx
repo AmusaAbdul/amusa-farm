@@ -9,7 +9,7 @@ const Crops = ({ filter }: { filter: string }) => {
     { id: 5, type: "Sugarcane", Species: "White sugarcane", Date: "3 weeks", Quantity: "123 piece", action: "View Details" },
     { id: 6, type: "Tomato", Species: "Cherry tomato", Date: "1 day", Quantity: "67kg", action: "View Details" },
     { id: 7, type: "Pepper", Species: "Bell pepper", Date: "3 days", Quantity: "123kg", action: "View Details" },
-    
+
   ]
 
   const filteredCrops = filter === "All" ? crops : crops.filter(crop => crop.type === filter);

@@ -1,20 +1,12 @@
 "use client"
-import {Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ChartData, ChartOptions} from "chart.js";
+import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, ChartData, ChartOptions } from "chart.js";
 import { Line } from "react-chartjs-2";
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 
-type RevenueExpensesChartProps = {
-  months: string[];
-  revenue: number[];
-  expenses: number[];
-};
+type RevenueExpensesChartProps = { months: string[]; revenue: number[]; expenses: number[] };
 
-const RevenueExpensesChart: React.FC<RevenueExpensesChartProps> = ({
-  months,
-  revenue,
-  expenses,
-}) => {
+const RevenueExpensesChart: React.FC<RevenueExpensesChartProps> = ({ months, revenue, expenses }) => {
   const data: ChartData<"line"> = {
     labels: months,
     datasets: [

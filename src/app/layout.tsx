@@ -10,7 +10,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
 
-  const year = new Date().getFullYear()
 
  
   return ( 

@@ -1,5 +1,5 @@
 "use client";
-import { useState} from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Typewriter from "typewriter-effect";
@@ -31,7 +31,7 @@ export default function Sidebar() {
 
         if (translateX < -100) {
             setIsOpen(false);
-        }
+        }   
         setTranslateX(0);
     };
     const links = [
@@ -41,7 +41,7 @@ export default function Sidebar() {
         { name: "Equipments Section", path: "/equipments" },
 
     ];
-    
+
     return (
         <>
             <div className="flex justify-between bg-white shadow items-center md:hidden ">
@@ -77,14 +77,14 @@ export default function Sidebar() {
                                 />
                             </h1>
                             {links.map((link) => (
-                                <Link key={link.name} href={link.path} onClick={() => setIsOpen(false)} className={` ${usePathname() === link.path ? "text-white shadow"  : "text-gray-300"} `}>
+                                <Link key={link.name} href={link.path} onClick={() => setIsOpen(false)} className={` ${usePathname() === link.path ? "text-white shadow" : "text-gray-300"} `}>
                                     {link.name}
                                 </Link>
                             ))}
                         </nav>
                     </aside>
                 </div>
-                <div className="text-base italic  text-green-500"> 
+                <div className="text-base italic  text-green-500">
                     <Typewriter
                         options={{
                             strings: [

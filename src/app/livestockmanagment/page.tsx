@@ -13,8 +13,8 @@ export default function Livestock() {
             <LivestockTopbar />
             <div className="p-4">
                 <Cards />
-                <Filter filter={filter} setFilter={setFilter} />
-                <Animal filter={filter} />
+                <Filter filter={filter} setFilter={setFilter}  />
+                <Animal filter={filter}  />
             </div>
         </div>
     )

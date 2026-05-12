@@ -19,16 +19,6 @@ export default function Charts() {
       </div>
       <div className="w-full  md:w-[45%]  bg-green-100 shadow p-5"    >
         <p>Production Summary</p>
-        {/* <div className="flex gap-4 mt-4">
-            <div className="flex gap-1 items-center">
-                <div className="w-4 h-4 bg-purple-400 "></div>
-                <p>Crops</p>
-            </div>
-            <div className="flex gap-1 items-center">
-                <div className="w-4 h-4 bg-blue-400 "></div>
-                <p>Livestock</p>
-            </div>
-        </div> */}
         <LivestockCropsChart livestock={livestock} crops={crops}/>
       </div>
     </div>
